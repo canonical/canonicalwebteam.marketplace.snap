@@ -1,6 +1,6 @@
 name: ilayda-test-hello
 base: core22
-version: '1.0.1'
+version: '1.0.3'
 summary: A trivial snap app
 description: Just prints hello
 
