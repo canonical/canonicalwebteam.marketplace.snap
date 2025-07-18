@@ -1,21 +1,20 @@
 name: ilayda-test-hello
 base: core22
 version: '1.0.1'
-summary: A trivial snap application.
-description: A simple greeting.
+summary: A trivial snap app
+description: Just prints hello
 
 grade: stable
-confinement: classic
+confinement: strict
 
 apps:
   ilayda-test-hello:
-    command: src/hello.py
+    command: usr/bin/hello.py
 
 parts:
-  main:
-    source: .
+  ilayda-test-hello:
     plugin: dump
-
-  python:
     source: .
-    plugin: python
+    stage-packages:
+      - python3
+
